@@ -325,11 +325,11 @@ compared, even when unnormalised densities cannot be obtained.
 											</tr>
 											<tr>
 												<td>11:15–11:45</td>
-												<td align="left"><em>Title: TBA</em>
+												<td align="left"><em>Title: Self-Speculative Masked Diffusions</em>
 												<br><b>Arnaud Doucet</b> (University of Oxford)
 												<br><a class="collapsible">[show abstract]</a>
 													<div class="content">
-														TBA
+														We present self-speculative masked diffusions, a new class of masked diffusion generative models for discrete data that require significantly fewer function evaluations to generate samples. Standard masked diffusion models predict factorized logits over currently masked positions. A number of masked positions are then sampled; however, the factorization approximation means that sampling too many positions in one go leads to poor sample quality. As a result, many simulation steps and therefore neural network function evaluations are required to generate high-quality data. We reduce the computational burden by generating non-factorized predictions over masked positions. This is achieved by modifying the final transformer attention mask from non-causal to causal, enabling draft token generation and parallel validation via a novel, model-integrated speculative sampling mechanism. This results in a non-factorized predictive distribution over masked positions in a single forward pass. We find that we can achieve a ~2x reduction in the required number of network forward passes relative to standard masked diffusion models.
 													</div>
 												</td>
 											</tr>
