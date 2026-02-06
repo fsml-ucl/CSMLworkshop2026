@@ -98,9 +98,9 @@
 									</li>
 
 									<li>
-										<img class="icon major" src="images/annakorba.jpg" alt="Photo of Anna Korba" width="200" height="200"/>
-										<h3><a href="https://akorba.github.io/">Anna Korba</a></h3>
-										<p>ENSAE, CREST, Institut Polytechnique de Paris</p>
+										<img class="icon major" src="images/nopics.jpg" alt="Photo of no pics" width="200" height="200"/>
+										<h3><a href="">TBA</a></h3>
+										<p>TB A</p>
 									</li>
 
 									<li>
@@ -167,41 +167,27 @@
 											</tr>
 											<tr>
 												<td>9:45–10:15</td>
-												<td align="left"><em>Title: Minimum distance summaries for robust neural posterior estimation</em>
-												<br><b>Dennis Prangle</b> (University of Bristol)
+												<td align="left"><em>Title: Adaptive model size in Gaussian processes for continual learning</em>
+												<br><b>Sarah Filippi</b> (Imperial College London)
 												<br><a class="collapsible" href="javascript:void(0)">[show abstract]</a>
 													<div class="content">
-														Neural posterior estimation enables approximate Bayesian inference using conditional density estimation from simulated prior-data pairs, typically reducing the data to low-dimensional summary statistics. NPE is susceptible to misspecification when observations deviate from the training distribution. We introduce minimum-distance summaries, a plug-in robust NPE method that adapts queried test-time summaries independently of the pretrained NPE. Leveraging the maximum mean discrepancy (MMD) as a distance between observed data and a summary-conditional predictive distribution, the adapted summary inherits strong robustness properties from the MMD. We demonstrate that the algorithm can be implemented efficiently with random Fourier feature approximations, yielding a lightweight, model-free test-time adaptation procedure. We provide theoretical guarantees for the robustness and consistency of our algorithm and empirically evaluate it on a range of synthetic and real-world tasks, demonstrating substantial robustness gains with minimal additional overhead.
+														Many machine learning models require fixing their capacity before training, such as the number of neurons in a neural network or inducing points in a Gaussian process. Increasing capacity typically improves performance until the available information in the data is captured, after which computational costs continue to grow without benefit. This raises the question: how big is big enough? In this talk, I address this problem for Gaussian processes in continual learning, where data arrives incrementally and the final dataset size is unknown in advance. In this setting, standard heuristics for choosing a fixed model size are unavailable. I present a method that automatically adapts model capacity online, achieving near-optimal predictive performance while avoiding unnecessary computation. All hyperparameters are set without access to dataset properties, and experiments across diverse datasets show that the method performs robustly with substantially less tuning than existing approaches. I will also briefly discuss related issues in scaling Gaussian processes with stochastic optimization, showing how minibatch-induced gradient noise can slow convergence in sparse variational models, and outlining a variance-reduction approach that accelerates training without full-batch computations.
 													</div>
 												</td>
-												<!--<td align="left"><em>Scaling up kernel-based structured output prediction with low-rank approaches.</em>
-												<br><b>Florence d'Alché-Buc</b> (Télécom Paris, Institut Polytechnique de Paris)
-												<br><a class="collapsible">[show abstract]</a>
-													<div class="content">
-														Surrogate regression methods offer a powerful and flexible solution to structured output prediction by embedding the output in a Hilbert space. In this talk we mainly focus on one the simplest and oldest surrogate approach that leverages kernels in the input space as well as in the output space. While enjoying strong statistical guarantees, these surrogate kernel methods require important computations, for training as well as for inference. We propose to re-visit them by applying low-rank projections in the input and output feature spaces to reduce the complexity. Low-rank projection operators based on sketching are presented and the statistical properties of the resulting novel estimator are studied in terms of excess risk bounds.
-														From a computational perspective, we show that the two approximations have distinct but complementary impacts: sketching the input kernel mostly reduces training time, while sketching the output kernel decreases the inference time. In conclusion, we identify other surrogate models based on other losses/distances where this approach could be relevant as well.
-													</div>
-												</td>
-												-->
+
 											</tr>
+											
 											<tr>
+											
 												<td>10:15–10:45</td>
-												<td align="left"><em>Title: A computationally-tractable measure of global sensitivity for Bayesian inference</em>
-												<br><b>Arina Odnoblyudova</b> (University College London)
+												<td align="left"><em>Title: TBA</em>
+												<br><b>Contributed Talk</b>
 												<br><a class="collapsible" href="javascript:void(0)">[show abstract]</a>
 													<div class="content">
-														Bayesian inference should ideally not be overly sensitive to the choice of prior or hyperparameters, but even defining and measuring this sensitivity is challenging.  Existing global sensitivity measures typically involve significant trade-offs between strength of the measure, interpretability, and computational tractability. Unfortunately, most methods are unable to serve the needs of modern Bayesian inference due to their high computational cost and poor performance in multiple dimensions. To address these limitations, we introduce a new approach to global sensitivity analysis which only requires a set of samples from a reference posterior and the ability to evaluate score functions, making it broadly computationally tractable. We demonstrate our proposed method on challenging Bayesian inference problems which are practically out of reach of existing approaches, including Bayesian inference for heavy-tailed time series, simulation-based inference for problems in telecommunications engineering, and generalised Bayesian inference for doubly-intractable models.
+														TBA
 													</div>
 												</td>
-												<!--
-												<td align="left"><em>Generalised Bayesian Inference for Intractable Likelihoods.</em>
-												<br><b>Takuo Matsubara</b> (The Alan Turing Institute & Newcastle University)
-												<br><a class="collapsible">[show abstract]</a>
-													<div class="content">
-														Generalised Bayesian inference updates prior beliefs using a loss function, rather than a likelihood, and can therefore be used to confer robustness against possible misspecification of the likelihood. Here we consider generalised Bayesian inference with a Stein discrepancy as a loss function, motivated by applications in which the likelihood contains an intractable normalisation constant. In this context, the Stein discrepancy circumvents evaluation of the normalisation constant and produces generalised posteriors that are either closed form or accessible using standard Markov chain Monte Carlo. On a theoretical level, we show consistency, asymptotic normality, and bias-robustness of the generalised posterior, highlighting how these properties are impacted by the choice of Stein discrepancy. Then, we provide numerical experiments on a range of intractable distributions, including applications to kernel-based exponential family models and non-Gaussian graphical models.
-													</div>
-												</td>
-												-->
+
 											</tr>
 											<tr>
 												<td>10:45–11:30</td>
@@ -209,23 +195,26 @@
 											</tr>
 											<tr>
 												<td>11:30–12:00</td>
-												<td align="left"><em>Title: TBA</em>
-												<br><b>Contributed Talk</b>
+												<td align="left"><em>Title: Minimum distance summaries for robust neural posterior estimation</em>
+												<br><b>Dennis Prangle</b> (University of Bristol)
 												<br><a class="collapsible" href="javascript:void(0)">[show abstract]</a>
 													<div class="content">
-														TBA
+														Neural posterior estimation enables approximate Bayesian inference using conditional density estimation from simulated prior-data pairs, typically reducing the data to low-dimensional summary statistics. NPE is susceptible to misspecification when observations deviate from the training distribution. We introduce minimum-distance summaries, a plug-in robust NPE method that adapts queried test-time summaries independently of the pretrained NPE. Leveraging the maximum mean discrepancy (MMD) as a distance between observed data and a summary-conditional predictive distribution, the adapted summary inherits strong robustness properties from the MMD. We demonstrate that the algorithm can be implemented efficiently with random Fourier feature approximations, yielding a lightweight, model-free test-time adaptation procedure. We provide theoretical guarantees for the robustness and consistency of our algorithm and empirically evaluate it on a range of synthetic and real-world tasks, demonstrating substantial robustness gains with minimal additional overhead.
 													</div>
 												</td>
+												
 											</tr>
 											<tr>
 												<td>12:00–12:30</td>
-												<td align="left"><em>Title: TBA</em>
-												<br><b>Contributed Talk</b>
+												<td align="left"><em>Title: A computationally-tractable measure of global sensitivity for Bayesian inference</em>
+												<br><b>Arina Odnoblyudova</b> (University College London)
 												<br><a class="collapsible" href="javascript:void(0)">[show abstract]</a>
 													<div class="content">
-														TBA
+														Bayesian inference should ideally not be overly sensitive to the choice of prior or hyperparameters, but even defining and measuring this sensitivity is challenging.  Existing global sensitivity measures typically involve significant trade-offs between strength of the measure, interpretability, and computational tractability. Unfortunately, most methods are unable to serve the needs of modern Bayesian inference due to their high computational cost and poor performance in multiple dimensions. To address these limitations, we introduce a new approach to global sensitivity analysis which only requires a set of samples from a reference posterior and the ability to evaluate score functions, making it broadly computationally tractable. We demonstrate our proposed method on challenging Bayesian inference problems which are practically out of reach of existing approaches, including Bayesian inference for heavy-tailed time series, simulation-based inference for problems in telecommunications engineering, and generalised Bayesian inference for doubly-intractable models.
 													</div>
 												</td>
+
+												
 											</tr>
 
 											<tr>
@@ -270,12 +259,13 @@
 											<tr>
 												<td>16:00–16:30</td>
 												<td align="left"><em>Title: TBA</em>
-												<br><b>Sarah Filippi</b> (Imperial College London)
+												<br><b>Contributed Talk</b>
 												<br><a class="collapsible" href="javascript:void(0)">[show abstract]</a>
 													<div class="content">
 														TBA
 													</div>
 												</td>
+
 											</tr>
 							
 										</tbody>
@@ -293,7 +283,7 @@
 											<tr>
 												<td>9:30–10:00</td>
 												<td align="left"><em>Title: TBA</em>
-												<br><b>Anna Korba</b> (ENSAE, CREST, Institut Polytechnique de Paris)
+												<br><b>TBA</b> (TBA)
 												<br><a class="collapsible" href="javascript:void(0)">[show abstract]</a>
 													<div class="content">
 														TBA
