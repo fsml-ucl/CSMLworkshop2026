@@ -185,11 +185,11 @@
 											<tr>
 											
 												<td>10:15–10:45</td>
-												<td align="left"><em>Title: TBA</em>
-												<br><b>Contributed Talk</b>
+												<td align="left"><em>Title: Beyond Uncertainty Sets: Leveraging Optimal Transport to Extend Conformal Predictive Distribution to Multivariate Settings</em>
+												<br><b>Eugene Ndiaye</b>
 												<br><a class="collapsible" href="javascript:void(0)">[show abstract]</a>
 													<div class="content">
-														TBA
+														Conformal prediction (CP) constructs uncertainty sets for model outputs with finite-sample coverage guarantees, all without distributional assumptions other than exchangeability. A candidate output is included in the prediction set if its non-conformity score is not considered extreme relative to the scores observed on a set of calibration examples. However, this procedure is only straightforward when scores are scalar-valued, which has limited CP to real-valued scores or ad-hoc reductions to one dimension. This limitation is critical, as vector-valued scores arise naturally in important settings such as multi-output regression or situations involving model aggregation, where each predictor in an ensemble provides its own score. %  The problem of ordering vectors has been studied via optimal transport (OT), which provides a principled method for defining vector-ranks and (center-outward) multivariate quantile regions, though typically with only asymptotic coverage guarantees. Specifically, this loss of validity occurs because applying a single, fixed transport map, learned from finite data, to new test points introduces an uncontrolled approximation error. We restore finite-sample, distribution-free coverage by conformalizing the vector-valued OT quantile region. In our approach, a candidate's rank is defined via a transport map computed for the calibration scores augmented with that candidate's score—a step crucial for preserving validity. This defines a continuum of OT problems (one for each candidate) which appears computationally infeasible. However, we prove that the resulting optimal assignment is piecewise-constant across a fixed polyhedral partition of the score space. This allows us to characterize the entire prediction set tractably and, crucially, provides the machinery to address a deeper limitation of prediction sets: that they only indicate which outcomes are plausible, but not their relative likelihood. %  In one dimension, conformal predictive distributions (CPDs) fill this gap by producing a predictive distribution with finite-sample calibration. Extending CPDs beyond one dimension remained an open problem. We construct, to our knowledge, the first multivariate CPDs with finite-sample calibration, i.e., they define a valid multivariate (center-outward) distribution where any derived uncertainty region automatically has guaranteed (conformal) coverage. We present both conservative and exact randomized versions, the latter resulting in a multivariate generalization of the classical Dempster-Hill procedure. 
 													</div>
 												</td>
 
@@ -211,15 +211,13 @@
 											</tr>
 											<tr>
 												<td>12:00–12:30</td>
-												<td align="left"><em>Title: A computationally-tractable measure of global sensitivity for Bayesian inference</em>
-												<br><b>Arina Odnoblyudova</b> (University College London)
+												<td align="left"><em>Title: TBA</em>
+												<br><b>Kimia Nadjahi</b>
 												<br><a class="collapsible" href="javascript:void(0)">[show abstract]</a>
 													<div class="content">
-														Bayesian inference should ideally not be overly sensitive to the choice of prior or hyperparameters, but even defining and measuring this sensitivity is challenging.  Existing global sensitivity measures typically involve significant trade-offs between strength of the measure, interpretability, and computational tractability. Unfortunately, most methods are unable to serve the needs of modern Bayesian inference due to their high computational cost and poor performance in multiple dimensions. To address these limitations, we introduce a new approach to global sensitivity analysis which only requires a set of samples from a reference posterior and the ability to evaluate score functions, making it broadly computationally tractable. We demonstrate our proposed method on challenging Bayesian inference problems which are practically out of reach of existing approaches, including Bayesian inference for heavy-tailed time series, simulation-based inference for problems in telecommunications engineering, and generalised Bayesian inference for doubly-intractable models.
+														TBA
 													</div>
 												</td>
-
-												
 											</tr>
 
 											<tr>
@@ -253,21 +251,21 @@
 											</tr>
 											<tr>
 												<td>15:30–16:00</td>
-												<td align="left"><em>Title: Amortised Bayesian inference for structured statistical models</em>
-												<br><b>Amanda Lenzi</b>
+												<td align="left"><em>Title: Saddlepoint Monte Carlo and its Application to Exact Ecological Inference</em>
+												<br><b>Robin Ryder</b>
 												<br><a class="collapsible" href="javascript:void(0)">[show abstract]</a>
 													<div class="content">
-														Amortised and simulation-based approaches provide flexible tools for Bayesian inference in models with intractable or computationally demanding likelihoods. Most modern methods aim to approximate the full joint posterior distribution using highly expressive neural architectures. However, in many statistical settings, inference focuses on low-dimensional structural parameters, and accurate marginal posteriors may suffice. In this talk, I present a structured variational framework that directly approximates marginal posterior distributions via amortised neural networks under Gaussian assumptions. This approach avoids learning a full joint posterior and can lead to stable and computationally efficient inference in structured statistical models. I illustrate the methodology in a spatial modelling context and discuss its statistical properties and practical performance. I conclude by outlining broader questions about when marginal amortisation is appropriate, how posterior dependence affects approximation quality, and what challenges arise when extending these ideas to models with stronger latent structure.
+														Assuming X is a random vector and A a non-invertible matrix, one sometimes need to perform inference while only having access to samples of Y = AX. The corresponding likelihood is typically intractable. One may still be able to perform exact Bayesian inference using a pseudo-marginal sampler, but this requires an unbiased estimator of the intractable likelihood. We propose saddlepoint Monte Carlo, a method for obtaining an unbiased estimate of the density of Y with very low variance, for any model belonging to an exponential family. Our method relies on importance sampling of the characteristic function, with insights brought by the standard saddlepoint approximation scheme with exponential tilting. We show that saddlepoint Monte Carlo makes it possible to perform exact inference on particularly challenging problems and datasets. We focus on the ecological inference problem, where one observes only aggregates at a fine level. We present in particular a study of the carryover of votes between the two rounds of various French elections, using the finest available data (number of votes for each candidate in about 60,000 polling stations over most of the French territory).     We show that existing, popular approximate methods for ecological inference can lead to substantial bias, which saddlepoint Monte Carlo is immune from. We also present original results for the 2024 legislative elections on political centre-to-left and left-to-centre conversion rates when the far-right is present in the second round.
 													</div>
 												</td>
 											</tr>
 											<tr>
 												<td>16:00–16:30</td>
-												<td align="left"><em>Title: TBA</em>
-												<br><b>Contributed Talk</b>
+												<td align="left"><em>Title: Asymptotically optimal self-normalized importance sampling driven by MCMC</em>
+												<br><b>Nicola Branchini</b>
 												<br><a class="collapsible" href="javascript:void(0)">[show abstract]</a>
 													<div class="content">
-														TBA
+														  We propose and study a class of methods to estimate expectations of generic test functions using an adaptive version of self-normalized importance sampling (SNIS).       The proposed approach is motivated by a particular combination of Markov Chain Monte Carlo (MCMC) and importance sampling (IS) that also takes the test function into account.      Within the adaptive IS (AIS) literature, the approach marks the first sampler that explicitly targets the (asymptotically) ``optimal proposal'' for SNIS, and does not restrict the proposal to a parametric family. Within the rich literature on MCMC-IS methods, the approach distinguishes itself by building a proposal that depends on the test function.      We discuss connections with other frameworks such as ratio IS, bridge sampling and stochastic approximation. We prove asymptotic properties of the proposed approach, including a martingale central limit theorem and a certain notion of asymptotic optimality of AIS inspired by \citep{portier2018asymptotic}. Our experiments suggest that it is possible to approximate the optimal SNIS proposal well and that it can significantly outperform direct MCMC on the target distribution in comparable settings.
 													</div>
 												</td>
 
@@ -287,21 +285,21 @@
 											</tr>
 											<tr>
 												<td>9:30–10:00</td>
-												<td align="left"><em>Title: TBA</em>
-												<br><b>Contributed Talk</b>
+												<td align="left"><em>Title: Amortised Bayesian inference for structured statistical models</em>
+												<br><b>Amanda Lenzi</b>
 												<br><a class="collapsible" href="javascript:void(0)">[show abstract]</a>
 													<div class="content">
-														TBA
+														Amortised and simulation-based approaches provide flexible tools for Bayesian inference in models with intractable or computationally demanding likelihoods. Most modern methods aim to approximate the full joint posterior distribution using highly expressive neural architectures. However, in many statistical settings, inference focuses on low-dimensional structural parameters, and accurate marginal posteriors may suffice. In this talk, I present a structured variational framework that directly approximates marginal posterior distributions via amortised neural networks under Gaussian assumptions. This approach avoids learning a full joint posterior and can lead to stable and computationally efficient inference in structured statistical models. I illustrate the methodology in a spatial modelling context and discuss its statistical properties and practical performance. I conclude by outlining broader questions about when marginal amortisation is appropriate, how posterior dependence affects approximation quality, and what challenges arise when extending these ideas to models with stronger latent structure.
 													</div>
 												</td>
 											</tr>
 											<tr>
 												<td>10:00–10:30</td>
-												<td align="left"><em>Title: A computable measure of suboptimality for entropy-regularised variational objectives</em>
-												<br><b>Heishiro Kanagawa</b> (Fujitsu Research)
+												<td align="left"><em>Title: Scaling-up simulation-based inference with diffusion models</em>
+												<br><b>Gilles Louppe</b> (University of Liège)
 												<br><a class="collapsible" href="javascript:void(0)">[show abstract]</a>
 													<div class="content">
-														Several emerging post-Bayesian methods target a probability distribution for which an entropy-regularised variational objective is minimised. This increased flexibility introduces a computational challenge, as one loses access to an explicit unnormalised density for the target. To mitigate this difficulty, we introduce a novel measure of suboptimality called gradient discrepancy, and in particular a kernel gradient discrepancy (KGD) that can be explicitly computed. In the standard Bayesian context, KGD coincides with the kernel Stein discrepancy (KSD), and we obtain a novel characterisation of KSD as measuring the size of a variational gradient. Outside this familiar setting, KGD enables novel sampling algorithms to be developed and compared, even when unnormalised densities cannot be obtained.
+														Deep generative models are transforming how we solve some of science's hardest puzzles: inverse problems where we must work backwards from noisy, incomplete observations to uncover hidden physical states. In this talk, we will explore three scales of application, from characterizing the atmospheres of distant exoplanets light years away, to reconstructing turbulent fluid dynamics from sparse measurements, to assimilating satellite data across the entire Earth's atmosphere in real time. We will see how normalizing flows, score based diffusion models, and latent space compression allow us to tackle problems spanning tens to billions of variables, revealing not just single solutions but entire distributions of physically plausible states.
 													</div>
 												</td>
 											</tr>
@@ -321,11 +319,11 @@
 											</tr>
 											<tr>
 												<td>11:45–12:15</td>
-												<td align="left"><em>Title: Scaling-up simulation-based inference with diffusion models</em>
-												<br><b>Gilles Louppe</b> (University of Liège)
+												<td align="left"><em>Title: A computable measure of suboptimality for entropy-regularised variational objectives</em>
+												<br><b>Heishiro Kanagawa</b> (Fujitsu Research)
 												<br><a class="collapsible" href="javascript:void(0)">[show abstract]</a>
 													<div class="content">
-														Deep generative models are transforming how we solve some of science's hardest puzzles: inverse problems where we must work backwards from noisy, incomplete observations to uncover hidden physical states. In this talk, we will explore three scales of application, from characterizing the atmospheres of distant exoplanets light years away, to reconstructing turbulent fluid dynamics from sparse measurements, to assimilating satellite data across the entire Earth's atmosphere in real time. We will see how normalizing flows, score based diffusion models, and latent space compression allow us to tackle problems spanning tens to billions of variables, revealing not just single solutions but entire distributions of physically plausible states.
+														Several emerging post-Bayesian methods target a probability distribution for which an entropy-regularised variational objective is minimised. This increased flexibility introduces a computational challenge, as one loses access to an explicit unnormalised density for the target. To mitigate this difficulty, we introduce a novel measure of suboptimality called gradient discrepancy, and in particular a kernel gradient discrepancy (KGD) that can be explicitly computed. In the standard Bayesian context, KGD coincides with the kernel Stein discrepancy (KSD), and we obtain a novel characterisation of KSD as measuring the size of a variational gradient. Outside this familiar setting, KGD enables novel sampling algorithms to be developed and compared, even when unnormalised densities cannot be obtained.
 													</div>
 												</td>
 											</tr>
@@ -339,11 +337,11 @@
 											</tr>
 											<tr>
 												<td>14:15–14:45</td>
-												<td align="left"><em>Title: TBA</em>
-												<br><b>Contributed Talk</b>
+												<td align="left"><em>Title: A computationally-tractable measure of global sensitivity for Bayesian inference</em>
+												<br><b>Arina Odnoblyudova</b> (University College London)
 												<br><a class="collapsible" href="javascript:void(0)">[show abstract]</a>
 													<div class="content">
-														TBA
+														Bayesian inference should ideally not be overly sensitive to the choice of prior or hyperparameters, but even defining and measuring this sensitivity is challenging.  Existing global sensitivity measures typically involve significant trade-offs between strength of the measure, interpretability, and computational tractability. Unfortunately, most methods are unable to serve the needs of modern Bayesian inference due to their high computational cost and poor performance in multiple dimensions. To address these limitations, we introduce a new approach to global sensitivity analysis which only requires a set of samples from a reference posterior and the ability to evaluate score functions, making it broadly computationally tractable. We demonstrate our proposed method on challenging Bayesian inference problems which are practically out of reach of existing approaches, including Bayesian inference for heavy-tailed time series, simulation-based inference for problems in telecommunications engineering, and generalised Bayesian inference for doubly-intractable models.
 													</div>
 												</td>
 											</tr>
@@ -353,21 +351,21 @@
 											</tr>
 											<tr>
 												<td>15:30–16:00</td>
-												<td align="left"><em>Title: TBA</em>
-												<br><b>Contributed Talk</b>
+												<td align="left"><em>Title: Robust Bayesian Optimisation with Unbounded Corruptions</em>
+												<br><b>Abdelhamid Ezzerg</b>
 												<br><a class="collapsible" href="javascript:void(0)">[show abstract]</a>
 													<div class="content">
-														TBA
+														Bayesian Optimization is critically vulnerable to extreme outliers. Existing provably robust methods typically assume a bounded cumulative corruption budget, which makes them defenseless against even a single corruption of sufficient magnitude. To address this, we introduce a new adversary whose budget is only bounded in the frequency of corruptions, not in their magnitude. We then derive RCGP-UCB, an algorithm coupling the famous upper confidence bound (UCB) approach with a Robust Conjugate Gaussian Process (RCGP). We present stable and adaptive versions of RCGP-UCB, and prove that they achieve sublinear regret in the presence of up to O(T^{1/4}) and O(T^{1/7}) corruptions with possibly infinite magnitude. This robustness comes at near zero cost: without outliers, RCGP-UCB's regret bounds match those of the standard GP-UCB algorithm.
 													</div>
 												</td>
 											</tr>
 											<tr>
 												<td>16:00–16:30</td>
-												<td align="left"><em>Title: TBA</em>
-												<br><b>Contributed Talk</b>
+												<td align="left"><em>Title: Computing importance weights for Markov chain Monte Carlo via couplings: an application to f-divergence diagnostics</em>
+												<br><b>Adrien Corenflos</b>
 												<br><a class="collapsible" href="javascript:void(0)">[show abstract]</a>
 													<div class="content">
-														TBA
+														A long-standing gap exists between the theoretical analysis of Markov chain Monte Carlo convergence, which is often based on statistical divergences, and the diagnostics used in practice. We introduce the first general convergence diagnostics for Markov chain Monte Carlo based on any f-divergence, allowing users to directly monitor, among others, the Kullback-Leibler and the χ-square divergences as well as the Hellinger and the total variation distances. Our first key contribution is a coupling-based "weight harmonization" scheme that produces a direct, computable, and consistent weighting of interacting Markov chains with respect to their target distribution. The second key contribution is to show how such consistent weightings of empirical measures can be used to provide upper bounds to f-divergences in general. We prove that these bounds are guaranteed to tighten over time and converge to zero as the chains approach stationarity, providing a concrete diagnostic.
 													</div>
 												</td>
 											</tr>
